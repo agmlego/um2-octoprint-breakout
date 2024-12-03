@@ -5266,7 +5266,7 @@
 			)
 		)
 		(property "Value" "printer relay"
-			(at 2.077 -8.237 90)
+			(at 2.414 -6.71 90)
 			(layer "F.SilkS")
 			(uuid "12f2ddb5-3847-4ffe-8927-54e0b2103314")
 			(effects
@@ -16870,7 +16870,7 @@
 		)
 	)
 	(group ""
-		(uuid "7b175fcc-52d7-4f95-a5ce-0c4f45a0385e")
+		(uuid "742b233b-7b80-44e5-9494-27389f1bffd4")
 		(members "5c547903-cdaf-45d6-a58c-79a53a0e6870" "94d38ae9-5ffe-4d49-887f-f3c84330930b")
 	)
 	(group ""
