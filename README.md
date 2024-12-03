@@ -34,6 +34,4 @@ This is a breakout for octoprint, compatible with the Ender3S1 display.
 | 40     | 21       |          | N/C                     |
 
 ### Images
-![top](https://agmlego.github.io/um2-octoprint-breakout/top.png)
-![bottom](https://agmlego.github.io/um2-octoprint-breakout/bottom.png)
-[Interactive BOM](https://agmlego.github.io/um2-octoprint-breakout/ibom.html)
+[Interactive BOM](bom/ibom.html)
