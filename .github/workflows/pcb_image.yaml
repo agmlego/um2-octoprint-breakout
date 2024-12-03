@@ -21,7 +21,7 @@ jobs:
         with:
           pcb_file: tome-um2-rpi-breakout.kicad_pcb
           output_path: ${{ github.workspace }}/images
-          ibom_args: --dark-mode --highlight-pin1 selected --include-tracks --include-nets --blacklist "H* TP*"
+          ibom_args: --dark-mode --highlight-pin1 selected --include-tracks --include-nets --blacklist "TP*"
 
       - name: Setup Pages
         if: github.ref == 'refs/heads/trunk'
