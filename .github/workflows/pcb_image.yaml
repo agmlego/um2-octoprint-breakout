@@ -1,0 +1,52 @@
+name: pcb_image
+on:
+  push:
+jobs:
+  render-artifacts:
+    name: render-artifacts
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: render pcb image
+        uses: linalinn/kicad-render@main
+        with:
+          pcb_file: tome-um2-rpi-breakout.kicad_pcb
+          output_path: ${{ github.workspace }}/images
+      
+      - name: render pcb ibom
+        uses: agmlego/kicad-ibom@trunk
+        with:
+          pcb_file: tome-um2-rpi-breakout.kicad_pcb
+          output_path: ${{ github.workspace }}/images
+          ibom_args: --dark-mode --highlight-pin1 selected --include-tracks --include-nets --blacklist "H* TP*"
+
+      - name: Setup Pages
+        if: github.ref == 'refs/heads/trunk'
+        uses: actions/configure-pages@v3
+
+      - name: Upload Artifacts
+        if: github.ref == 'refs/heads/trunk'
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: images/
+
+  deploy-pages:
+    if: github.ref == 'refs/heads/trunk'
+    runs-on: ubuntu-latest
+    needs: render-artifacts
+      
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
