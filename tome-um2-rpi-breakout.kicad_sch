@@ -3868,8 +3868,8 @@
 		(uuid "4568d504-b327-4bd1-83e3-f88f308ab3ea")
 	)
 	(no_connect
-		(at 81.28 148.59)
-		(uuid "621fe108-2d4d-420a-973c-0ac30595f101")
+		(at 81.28 143.51)
+		(uuid "6baf1d3e-37a9-42a1-a4da-f7a7c28b8531")
 	)
 	(no_connect
 		(at 40.64 135.89)
@@ -4607,28 +4607,6 @@
 			)
 		)
 	)
-	(global_label "printer_sense"
-		(shape input)
-		(at 81.28 143.51 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0ed7ba76-8cbb-4819-9170-3e017e54a925")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 96.9047 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "printer_rx_hi"
 		(shape output)
 		(at 147.32 50.8 0)
@@ -4708,28 +4686,6 @@
 		(uuid "1ee6672b-15bc-423c-8baf-4a9d432a61f8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 126.2525 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SCL"
-		(shape bidirectional)
-		(at 40.64 143.51 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1ff1c50c-bf61-4034-84d4-50e9a0d83e02")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 33.0359 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4981,28 +4937,6 @@
 			)
 		)
 	)
-	(global_label "relay"
-		(shape output)
-		(at 81.28 146.05 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7b1bb005-440a-404d-8df8-74f1d015a12d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.9218 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "pi_blue"
 		(shape output)
 		(at 40.64 123.19 180)
@@ -5179,6 +5113,28 @@
 			)
 		)
 	)
+	(global_label "SDA"
+		(shape bidirectional)
+		(at 81.28 146.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a3678e63-c3e4-4332-9461-bfb80376ade1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.9446 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "printer_rx_lo"
 		(shape output)
 		(at 40.64 113.03 180)
@@ -5245,24 +5201,24 @@
 			)
 		)
 	)
-	(global_label "SDA"
+	(global_label "SCL"
 		(shape bidirectional)
-		(at 40.64 140.97 180)
+		(at 81.28 148.59 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "c3f30b68-f9d4-4a0b-baf7-5435f11884c4")
+		(uuid "c6fbd5fc-a9e7-420b-9b81-2dcce66a13b1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 32.9754 140.97 0)
+			(at 88.8841 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5373,6 +5329,50 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "relay"
+		(shape output)
+		(at 40.64 143.51 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "da15b095-19d2-418d-a25c-b91b5296e5c9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 32.9982 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "printer_sense"
+		(shape input)
+		(at 40.64 140.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e2b4f6c1-92c6-44ca-b05d-cbb38df43ebe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 25.0153 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
