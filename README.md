@@ -1,5 +1,7 @@
 This is a breakout for octoprint, compatible with the Ender3S1 display.
 
+
+### Pinout
 | J1 Pin | GPIO Pin | Mux      | Purpose                 |
 |--------|----------|----------|-------------------------|
 | 3      | 2        |          | N/C                     |
@@ -30,3 +32,8 @@ This is a breakout for octoprint, compatible with the Ender3S1 display.
 | 37     | 26       | `GPIO26` | Encoder channel A       |
 | 38     | 20       |          | N/C                     |
 | 40     | 21       |          | N/C                     |
+
+### Images
+![top](https://agmlego.github.io/um2-octoprint-breakout/top.png)
+![bottom](https://agmlego.github.io/um2-octoprint-breakout/bottom.png)
+[Interactive BOM](https://agmlego.github.io/um2-octoprint-breakout/ibom.html)
