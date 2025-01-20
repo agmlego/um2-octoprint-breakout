@@ -35,3 +35,28 @@ This is a breakout for octoprint, compatible with the Ender3S1 display.
 
 ### Images
 [Interactive BOM](bom/ibom.html)
+
+### Device Tree Overlay
+```
+# Power button
+dtoverlay=gpio-shutdown
+# Automated blower control
+dtoverlay=pwm-gpio-fan,fan_gpio=18
+# Printer power
+gpio=23=op,dl
+# LEDs
+dtoverlay=gpio-led,gpio=17,label=blue,trigger=actpwr
+dtoverlay=gpio-led,gpio=24,label=green
+dtoverlay=gpio-led,gpio=27,label=red
+# Display controls
+dtoverlay=gpio-key,gpio=12,label=knobpress,keycode=256
+dtoverlay=rotary-encoder,pin_a=19,pin_b=26,relative_axis=1
+# Display UART
+dtoverlay=uart3
+# Beeper
+gpio=13=op,dl
+# Power sense
+gpio=22=ip,np
+# I2C
+dtoverlay=i2c5,pins_10_11=1,baudrate=400000
+```
