@@ -499,7 +499,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "tome-um2-rpi-breakout.step",
       "svg": "",
       "vrml": ""
     },
